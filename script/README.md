@@ -16,7 +16,7 @@ To run this scraper, you will need:
 
 1. Clone the repository to your local machine.
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/mildnl/python-docx-script.git
 ```
 2. Install the required libraries using pip.
 ```bash
@@ -45,7 +45,7 @@ To use the scraper, run the following command:
 ```bash
 python scrape.py
 ```
-The scraper will then scrape all the bible books available on the German version of the JW.ORG website and save them to the Firestore database specified in the config.py file.
+The scraper will then scrape all the bible books available on the German version of the JW.ORG website and save them to the Firestore database specified in the config/serviceAccountKey.json file.
 
 ##Output
 
@@ -53,10 +53,13 @@ The scraper will save the scraped data to the specified Firestore collection in 
 
 ```json
 {
-    "book": "Genesis",
-    "chapter": 1,
-    "verse": 1,
-    "text": "Im Anfang erschuf Gott die Himmel und die Erde."
+    Book: "1 Buch Mose (Genisis)"
+    Chapter: {
+        Number: 1
+        Verses: [...]
+    }
+    ...
+    Number: 1
 }
 ```
 ##Contributing
