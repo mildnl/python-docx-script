@@ -1,0 +1,10 @@
+# all data in config folder
+
+.pytest_cache
+__pycache__
+bin
+etc
+lib
+share
+pyvenv.cfg
+script/config/serviceAccountKey.json
